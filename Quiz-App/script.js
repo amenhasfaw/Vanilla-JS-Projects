@@ -41,3 +41,28 @@ const quiz = [
     }
 ]
 
+const question = document.getElementById('question')
+const ans_a = document.getElementById('ans_a')
+const ans_b = document.getElementById('ans_b')
+const ans_c = document.getElementById('ans_c')
+const ans_d = document.getElementById('ans_d')
+const submit = document.getElementById('submit')
+
+currentQ = 0
+currentQuestion();
+
+function currentQuestion(){
+    question.innerHTML = quiz[currentQ].question
+    ans_a.innerHTML = quiz[currentQ].a
+    ans_b.innerHTML = quiz[currentQ].b
+    ans_c.innerHTML = quiz[currentQ].c
+    ans_d.innerHTML = quiz[currentQ].d
+}
+
+submit.addEventListener('click', () => {
+    currentQ++
+    currentQuestion()
+})
+
+
+
