@@ -71,6 +71,7 @@ submit.addEventListener('click', () => {
                     score++
                 }
             }
+            choice.checked = false
         });
     }
 
