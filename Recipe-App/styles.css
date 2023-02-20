@@ -8,4 +8,6 @@ body{
     font-family: 'Libre Baskerville', serif;
     /* font-family: 'Nabla', cursive; */
     margin: 0;
+    background: linear-gradient(to top,#31cef8,#9de2bf);
+    height: 100vh;
 }
