@@ -25,6 +25,7 @@ body{
     background-color: rgb(229, 234, 249);
     border-radius: 5px;
     overflow: hidden;
+    margin: 10%;
 }
 h3{
     padding: 10px;
