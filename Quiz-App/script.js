@@ -47,7 +47,9 @@ const ans_b = document.getElementById('ans_b')
 const ans_c = document.getElementById('ans_c')
 const ans_d = document.getElementById('ans_d')
 const submit = document.getElementById('submit')
+const quizBox = document.getElementById('quiz-box')
 
+score = 0
 currentQ = 0
 currentQuestion();
 
@@ -60,9 +62,36 @@ function currentQuestion(){
 }
 
 submit.addEventListener('click', () => {
+    
+    if(currentQ < quiz.length){
+        let choices = document.getElementsByName('ans')
+        choices.forEach(choice => {
+            if(choice.checked){
+                if (choice.value === quiz[currentQ].answer){
+                    score++
+                }
+            }
+        });
+    }
+
     currentQ++
-    currentQuestion()
+    if(currentQ < quiz.length){
+        currentQuestion()
+    }
+    if(currentQ === quiz.length){
+        quizBox.innerHTML = `
+        <h5>You scored ${score}/${quiz.length}.</h5>
+        <button id="reload"> RELOAD </button>`
+        reload.addEventListener('click', () => {
+            const reload = document.getElementById('reload')
+            location.reload()
+        })
+    }
 })
+
+
+
+
 
 
 

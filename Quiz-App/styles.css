@@ -31,6 +31,13 @@ h3{
     padding: 10px;
     margin: 15px 15px;
 }
+h5{
+    padding: 20px;
+    margin: 10px 40px;
+    font-weight: bold;
+    font-size: x-large;
+
+}
 ul{
     list-style-type: none;
     margin: 0;
@@ -51,6 +58,9 @@ button{
 }
 button:hover{
     background-color: rgb(165, 20, 49) ;
+}
+#reload{
+    background-color: cadetblue;
 }
 label{
     cursor: pointer;
