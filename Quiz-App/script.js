@@ -61,20 +61,35 @@ function currentQuestion(){
     ans_d.innerHTML = quiz[currentQ].d
 }
 
-submit.addEventListener('click', () => {
-    
+function scoreCounter(){
     if(currentQ < quiz.length){
         let choices = document.getElementsByName('ans')
+        let selectedChoices = false
         choices.forEach(choice => {
             if(choice.checked){
+                selectedChoices = true
                 if (choice.value === quiz[currentQ].answer){
                     score++
                 }
             }
             choice.checked = false
         });
+        
+        if(!selectedChoices){
+             return false
+        }
+        return true
     }
 
+}
+
+submit.addEventListener('click', () => {
+
+
+    if(!scoreCounter()){
+        return
+    }
+    
     currentQ++
     if(currentQ < quiz.length){
         currentQuestion()
