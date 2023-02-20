@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nabla&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+    /* font-family: 'Nabla', cursive; */
+    margin: 0;
+}
