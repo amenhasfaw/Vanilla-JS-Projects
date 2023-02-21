@@ -21,9 +21,6 @@ h3{
     font-size: 4rem;
 }
 
-form{
-    width: 100%;
-}
 
 input{
     padding: 0.5rem;
@@ -32,7 +29,7 @@ input{
     border: none;
     outline: none;
     color:#313d4d;
-    width: 100%;
+    width: 100%
 }
 
 input:active{
