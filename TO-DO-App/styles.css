@@ -21,10 +21,10 @@ h3{
     font-size: 4rem;
 }
 
-
 input{
     padding: 0.5rem;
     font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
     border: none;
     outline: none;
     color:#313d4d;
@@ -44,4 +44,12 @@ ul{
 }
 ul li{
     padding: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+small{
+    text-align: center;
+    font-size: x-small;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2rem;
+    color: #95a9c4;
 }
