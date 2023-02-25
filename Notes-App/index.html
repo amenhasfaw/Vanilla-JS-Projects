@@ -10,6 +10,7 @@
       href="https://cdn-icons-png.flaticon.com/512/4946/4946342.png"
       type="image/x-icon"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.12/marked.min.js"></script>
     <script src="script.js" defer></script>
     <title>Notes App</title>
   </head>
@@ -19,24 +20,24 @@
       <button id="AddNote">+ Add Note</button>
     </div>
     <div id="allnotes">
-      <div id="note">
-        <div id="note-edit">
-          <button>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1828/1828802.png"
-              alt="Edit Button"
-            />
-          </button>
-          <button>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/484/484560.png"
-              alt="Delete Button"
-            />
-          </button>
-        </div>
-        <textarea id="input"></textarea>
-        <div id="main"></div>
-      </div>
+        <div id="note">
+            <div id="note-edit">
+              <button id="edit">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1828/1828802.png"
+                  alt="Edit Button"
+                />
+              </button>
+              <button id="delete">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/484/484560.png"
+                  alt="Delete Button"
+                />
+              </button>
+            </div>
+            <textarea id="input"></textarea>
+            <div id="main"></div>
+          </div>
     </div>
   </body>
 </html>
