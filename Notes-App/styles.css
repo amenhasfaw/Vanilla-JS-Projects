@@ -72,11 +72,26 @@ h2{
     background-color: #f5eaea;
     margin: 0px;
     padding: 0px;
+    border: none;
+    outline: none;
+    z-index: 2;
+    padding: 0.2rem;
 
 }
 #note main{
-    height: 100%;
+    height: 300px;
     width: 100%;
     color: #dedaca;
+    z-index: 1;
 }
+
+
+#note textarea.hidden{
+    display: none;
+}
+#note main.hidden{
+    display: none;
+}
+
+
 
