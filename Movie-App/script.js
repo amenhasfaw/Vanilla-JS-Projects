@@ -4,6 +4,8 @@ const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5
 
 
 const main = document.getElementById('movies');
+const form = document.getElementById('form');
+const input = document.getElementById('input');
 
 getMovies(APIURL)
 
@@ -14,7 +16,7 @@ async function getMovies(url){
     console.log(response.results)
 
     response.results.forEach(movie => {
-       const {title, poster_path, vote_average, overview } = movie
+       const {title, poster_path, vote_average, overview, release_date } = movie
 
        const movieEL = document.createElement('div')
        movieEL.classList.add('main')
@@ -23,13 +25,29 @@ async function getMovies(url){
        <img src="${IMGPATH + poster_path}" alt="">
        <div id="movie-info">
            <h2>${title}</h2>
-           <span>${vote_average}</span>
+           <span>${vote_average.toFixed(1)}</span>
        </div>
-       
+       <div id='overview'>
+       <h4>Overview<h4>
+       ${overview}
+       <h4>Released: ${release_date}<h4>
+       </div> 
        `
 
        main.appendChild(movieEL)
-
     
     });
 }
+
+
+form.addEventListener('submit' , (e) => {
+    e.preventDefault();
+
+    const searchTerm = SEARCHAPI + input.value
+    main.innerHTML = ''
+    getMovies(searchTerm)
+    
+    
+    
+    input.value = ''
+})

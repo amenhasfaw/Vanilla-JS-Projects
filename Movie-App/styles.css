@@ -6,20 +6,28 @@
 }
 body{
     font-family: 'Libre Baskerville', serif;
-    /* font-family: 'Nabla', cursive; */
     margin: 0;
     background-color: #23243B;
 }
 #search{
     padding: 1.0rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     background-color: #15162a;
+}
+#search h3{
+    margin: 0px;
+    color: #fca105;
+    padding-left: 0.5rem;
+    font-size: x-large;
+    font-family: 'Nabla', cursive;
+
 }
 #search input{
     padding: 0.5rem;
     background-color: transparent;
-    border-color: #E4C399;
+    border-color: #e8fc05;
     border-radius: 15px;
     color: rgb(204, 204, 204);
     font-family: inherit;
@@ -46,6 +54,7 @@ body{
     position: relative;
     margin: 1rem;
     width: 250px;
+
 }
 
 #movie-info{
@@ -63,8 +72,25 @@ body{
 #movie-info span{
     color: black;
     padding: 0.2rem;
-    background-color: #E4C399;
+    background-color: #e8fc05;
     border-radius: 4px;
-    margin-left: 1rem;
-    
+    margin-left: 1rem;   
 }
+#overview{
+    color: #232347;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+    overflow: auto;
+    background-color: #fcc605e9;
+    padding: 0.8rem;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main:hover #overview{
+    transform: translateY(0%);
+}
+
+
