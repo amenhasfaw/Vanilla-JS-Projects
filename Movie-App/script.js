@@ -13,7 +13,6 @@ async function getMovies(url){
     const resp = await fetch(url);
     const response = await resp.json();
 
-    console.log(response.results)
 
     response.results.forEach(movie => {
        const {id, title, vote_average, overview, release_date } = movie
@@ -28,8 +27,6 @@ async function getMovies(url){
         poster_path = ALT_POSTER
         IMGPATH = ""
        }
-
-       console.log(poster_path)
 
 
        movieEL.innerHTML = `
