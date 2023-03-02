@@ -8,4 +8,45 @@ body{
     font-family: 'Libre Baskerville', serif;
     /* font-family: 'Nabla', cursive; */
     margin: 0;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#canvas{
+    background-color: #ddd;
+}
+#canvas-tools{
+    background-color: #222;
+    padding: 1rem;
+    border-style:outset;
+    border-color: rgb(0, 255, 123);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+} 
+#canvas-tools label{
+    font-size: xx-large;
+    font-family:'Times New Roman', Times, serif;
+    margin-right: 1rem;
+    color: #666;
+}
+#color{
+    cursor: pointer;
+}
+body h4{
+    width: 100%;
+    text-align: center;
+    color: #666;
+    margin-top: 5rem;
+}
+body img{
+    width: 2rem;
+    margin: 2rem;
+    cursor: pointer;
+    opacity: 90%;
 }
