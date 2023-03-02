@@ -5,8 +5,55 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Libre Baskerville', serif;
+    font-family:'Courier New', Courier, monospace;
     /* font-family: 'Nabla', cursive; */
     margin: 0;
+    height: 100vh;
     background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#input{
+    width: 50vw;
+    padding: 1rem;
+    border-radius: 4rem;
+    background: transparent;
+    border-color: skyblue;
+    border-style:double;
+    font-family: inherit;
+    color: antiquewhite;
+}
+#input:focus{
+    outline: none;
+}
+#temp img{
+    width: 2rem;
+    height: 2rem;
+}
+#temp h1{
+    margin: 0 2rem;
+    color: #aaa;
+    font-size: 3rem;
+}
+#temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#city-name{
+    color: #aaa;
+    margin-bottom: 3rem;
+}
+.no-data h3{
+    margin-bottom: 4rem;
+    color: red;
 }
