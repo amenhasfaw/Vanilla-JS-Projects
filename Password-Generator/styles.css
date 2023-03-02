@@ -5,7 +5,59 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Libre Baskerville', serif;
+    font-family:'Courier New', Courier, monospace;
     /* font-family: 'Nabla', cursive; */
     margin: 0;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+}
+#password-generator{
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    padding: 1rem;
+    width: 350px;
+}
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0rem;
+}
+#password-length input{
+    padding: 0.3rem;
+    background-color: #aaa;
+    border-style:dashed;
+    border-radius: 15px;
+    border-color:aliceblue;
+    width: 3rem;
+    text-align: center;
+}
+#password-length{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+#password-generator span{
+    width: 100%;
+    background-color: #333;
+    padding: 0.5rem;
+    margin: 0.5rem 0rem;
+}
+#generate{
+    padding: 0.5rem;
+    margin: 0.5rem 0rem;
+    background-color: rgb(71, 255, 163);
+    border: none;
+    cursor: pointer;
+}
+#generate:hover{
+    background-color: hsla(150, 100%, 64%, 0.707);
+}
+input{
+    cursor: pointer;
 }
