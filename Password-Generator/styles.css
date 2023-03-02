@@ -42,11 +42,21 @@ body{
     align-items: center;
     margin: 1rem 0rem;
 }
-#password-generator span{
+#pw-out{
     width: 100%;
     background-color: #333;
-    padding: 0.5rem;
+    padding: 0.5rem 0.8rem;
     margin: 0.5rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#output{
+    overflow: auto;
+}
+#output::-webkit-scrollbar{
+    display: none;
+
 }
 #generate{
     padding: 0.5rem;
@@ -58,6 +68,18 @@ body{
 #generate:hover{
     background-color: hsla(150, 100%, 64%, 0.707);
 }
-input{
+input, button{
     cursor: pointer;
+}
+#copy{
+    background: none;
+    border:none;
+    padding: 0;
+    margin: 0rem 1rem;
+    position:sticky;
+}
+#copy img{
+    width: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
